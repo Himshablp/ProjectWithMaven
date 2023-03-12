@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- <property name="com.mysql.jdbc.cj.Driver"></property> -->
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/myhiber?useSSL=false</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">55555</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<!-- <property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property> -->
+		<property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+		<mapping class="com.tut.Student"/>
+		<mapping class="com.tut.Address"/>
+		<mapping class="com.tut.EmDemo"/>
+		<mapping class="com.map.Question"/>
+		<mapping class="com.map.Answer"/>
+		<mapping class="com.map1.Project"/>
+		<mapping class="com.map1.Emp"/>
+		
+		
+		
+	</session-factory>
+</hibernate-configuration>
